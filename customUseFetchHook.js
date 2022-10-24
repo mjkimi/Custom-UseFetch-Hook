@@ -31,7 +31,6 @@ const useFetch = (url) => {
   );
 
   useEffect(() => {
-    if (!url) return;
     dispatch({ type: 'FETCHING' });
 
     // JavaScript AbortController allows to abort request.
